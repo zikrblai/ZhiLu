@@ -1,15 +1,37 @@
 import React from 'react';
-import logo from '/zhilu/my-project/public/images/logo.png';
+import logo from '/Users/blairezikratch/zhilu/my-project/public/images/logo.png'; // Adjust the path to your logo file
 
 function About() {
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-[#160B50] via-[#231383] to-[#0A0235]">
-      <div className="container mx-auto text-center text-white">
-        <img src={logo} alt="ZhiLu Logo" className="mx-auto mb-8" />
-        <div className="text-lg leading-relaxed">
-          <p>At ZhiLu, we believe in empowering individuals to take the Wise Path. Our innovative platform leverages advanced AI technology to provide you with personalized debt-repayment strategies, secure payment processing, seamless banking integration, and a comprehensive financial health score.</p>
-          <p>With ZhiLu, you're not just managing your credit cards; you're mastering them. Join us on a journey towards financial freedom and discover how ZhiLu can help you achieve your financial goals.</p>
+      <div className="container mx-auto text-center text-white flex items-center">
+        <div className="w-1/3">
+          <img src={logo} alt="ZhiLu Logo" className="mx-auto mb-8" />
         </div>
+        <div className="w-2/3 text-left pl-8">
+          <p className="text-2xl" style={{
+            color: '#FFF',
+            textAlign: 'center',
+            fontFamily: 'Inter',
+            fontSize: '64px',
+            fontStyle: 'bold',
+            fontWeight: 700,
+            lineHeight: 'normal',
+            letterSpacing: '-1.28px',
+          }}>choose the Wise Path.</p>
+        </div>
+      </div>
+      <div className="container mx-auto text-center text-white mt-8">
+        <p className="text-xl" style={{
+          color: '#FFF',
+          textAlign: 'center',
+          fontFamily: 'Inter',
+          fontSize: '64px',
+          fontStyle: 'bold',
+          fontWeight: 700,
+          lineHeight: 'normal',
+          letterSpacing: '-1.28px',
+        }}>With ZhiLu, you're not managing your credit card debt; you're mastering it.</p>
       </div>
     </section>
   );
